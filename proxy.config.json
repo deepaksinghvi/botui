@@ -1,0 +1,6 @@
+{
+  "/api/*": {
+    "target": "http://warehousebot.us-east-2.elasticbeanstalk.com/warehousebot",
+    "secure": false
+  }
+}

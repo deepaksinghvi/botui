@@ -1,0 +1,24 @@
+<div class="col-md-6">
+<h2> Bot List</h2>
+
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th>Bot Id</th>
+    <th>Start Location</th>
+    <th>Pickup Location</th>
+    <th>End Location</th>
+    <th>Update</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let bot of bots">
+    <td>{{bot.botId}}</td>
+    <td contenteditable='true'>{{ bot.startLoc }}</td>
+    <td contenteditable='true'>{{ bot.intermediateLoc }}</td>
+    <td contenteditable='true'>{{ bot.endLoc }}</td>
+    <td><button class="btn btn-danger" (click)="updateBot(bot)"> Update Bot</button></td>
+  </tr>
+  </tbody>
+</table>
+</div>
